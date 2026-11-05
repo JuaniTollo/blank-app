@@ -1,0 +1,59 @@
+{
+  "moneda": "ARS",
+  "ofertas": [
+    {
+      "id": "BIENVENIDA10",
+      "nombre": "Primera compra",
+      "objetivo": "Captar clientes nuevos",
+      "tipo": "descuento_porcentaje",
+      "valor": 10,
+      "condiciones": { "solo_clientes_nuevos": true, "compra_minima": 0 },
+      "vigencia": { "desde": "2026-11-05", "hasta": "2026-12-31" }
+    },
+    {
+      "id": "ENVIOGRATIS",
+      "nombre": "Envío gratis",
+      "objetivo": "Subir el ticket promedio",
+      "tipo": "envio_gratis",
+      "valor": null,
+      "condiciones": { "solo_clientes_nuevos": false, "compra_minima": 50000 },
+      "vigencia": { "desde": "2026-11-05", "hasta": "2026-12-31" }
+    },
+    {
+      "id": "3X2",
+      "nombre": "Llevá 3, pagá 2",
+      "objetivo": "Aumentar unidades por compra y rotar stock",
+      "tipo": "promocion_cantidad",
+      "valor": { "lleva": 3, "paga": 2 },
+      "condiciones": { "solo_clientes_nuevos": false, "compra_minima": 0 },
+      "vigencia": { "desde": "2026-11-05", "hasta": "2026-11-26" }
+    },
+    {
+      "id": "VOLVE15",
+      "nombre": "Te extrañamos",
+      "objetivo": "Recuperar clientes inactivos hace más de 90 días",
+      "tipo": "descuento_porcentaje",
+      "valor": 15,
+      "condiciones": { "solo_clientes_nuevos": false, "compra_minima": 20000 },
+      "vigencia": { "desde": "2026-11-05", "hasta": "2026-12-15" }
+    },
+    {
+      "id": "BLACK25",
+      "nombre": "Black Friday",
+      "objetivo": "Generar un pico de ventas por tiempo limitado",
+      "tipo": "descuento_porcentaje",
+      "valor": 25,
+      "condiciones": { "solo_clientes_nuevos": false, "compra_minima": 30000 },
+      "vigencia": { "desde": "2026-11-27", "hasta": "2026-11-30" }
+    },
+    {
+      "id": "NAVIDAD20",
+      "nombre": "Combo regalo de Navidad",
+      "objetivo": "Aprovechar la temporada de regalos con combos",
+      "tipo": "descuento_combo",
+      "valor": 20,
+      "condiciones": { "solo_clientes_nuevos": false, "compra_minima": 0 },
+      "vigencia": { "desde": "2026-12-01", "hasta": "2026-12-24" }
+    }
+  ]
+}
