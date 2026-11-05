@@ -1,6 +1,18 @@
+import random
+
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+FRASES = [
+    "Hecho es mejor que perfecto.",
+    "Primero que funcione, después que sea lindo.",
+    "Si compila, es hora de un mate.",
+    "Todo bug es una feature que todavía no encontró su público.",
+    "Un commit chico por día mantiene lejos al merge conflict.",
+]
+
+st.title("🎈 Frase del día")
+st.write("Tocá el botón y llevate una frase para arrancar.")
+
+if st.button("Dame una frase"):
+    st.success(random.choice(FRASES))
+    st.balloons()
